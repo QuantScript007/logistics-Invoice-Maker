@@ -21,7 +21,7 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 
 ## Features
 
-- Quotes and invoices, saved on the device (convert an accepted quote into an invoice)
+- Quotes and invoices, saved on the device; **Edit** any saved quote or invoice (number kept, change logged); convert an accepted quote into an invoice
 - Several companies/letterheads, each with your own uploaded logo, address and number prefix
 - Staff users with "Prepared by" and their own bank details on invoices
 - **Ledger**: full history of quotes, invoices and payments for each user, with invoiced / received / outstanding totals, running balance and CSV export
