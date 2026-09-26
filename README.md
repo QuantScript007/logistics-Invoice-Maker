@@ -4,7 +4,7 @@ Make quotations and invoices for your logistics company on your phone. Anyone ca
 
 ## Get the app
 
-**On your phone (web app):** open **https://quantscript007.github.io/mofa-quotes/** in Chrome, then ⋮ → **Install app**.
+**On your phone (web app):** open **https://quantscript007.github.io/logistics-Invoice-Maker/** in Chrome, then ⋮ → **Install app**.
 It works offline, and your data stays on your phone.
 
 **Android APK:** open **Releases → latest** on this repo from your phone and download **Logistic-Invoice-Maker.apk**.
