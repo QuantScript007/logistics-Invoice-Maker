@@ -13,7 +13,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Push www/ to the gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
