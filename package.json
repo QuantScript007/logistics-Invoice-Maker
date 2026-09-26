@@ -1,8 +1,8 @@
 {
-  "name": "mofa-quotes",
+  "name": "logistic-invoice-maker",
   "version": "1.0.0",
   "private": true,
-  "description": "MOFA Quotation Maker — quotes and invoices on Android",
+  "description": "Logistic Invoice Maker \u2014 quotes and invoices on Android",
   "scripts": {
     "serve": "npx --yes serve www -l 8080",
     "android:add": "npx cap add android",

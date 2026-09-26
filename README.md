@@ -1,45 +1,42 @@
-# MOFA Quotes
+# Logistic Invoice Maker
 
-Quotations and invoices for MOFA Company Pvt Ltd, as a mobile app. You can run it three ways.
+Make quotations and invoices for your logistics company on your phone. Anyone can set it up for their own business: company name, address, logo and staff users.
 
-## 1. Open on your phone (fastest)
+## Get the app
 
-**https://quantscript007.github.io/mofa-quotes/**
+**On your phone (web app):** open **https://quantscript007.github.io/mofa-quotes/** in Chrome, then ⋮ → **Install app**.
+It works offline, and your data stays on your phone.
 
-Open the link in Chrome on Android, then go to menu ⋮ → **Install app** (or **Add to Home screen**).
-The app gets its own icon, runs full-screen and works offline. Data is saved on the phone.
+**Android APK:** open **Releases → latest** on this repo from your phone and download **Logistic-Invoice-Maker.apk**.
+If Android asks, allow "Install unknown apps" once. Later builds install over the top and keep your data.
 
-## 2. Install the Android APK
+## First-time setup
 
-Every push to `main` builds a fresh APK automatically (see the **Actions** tab).
-
-1. Open **Releases → latest** on this repo from your phone.
-2. Download **MOFA-Quotes.apk** and open it.
-3. If Android asks, allow "Install unknown apps" for Chrome or your file manager.
-
-## 3. Run on a computer
-
-```bash
-npx serve www        # then open http://localhost:3000
-```
-
-## What's in the repo
-
-| Path | What it is |
-|---|---|
-| `www/index.html` | The whole app in one self-contained file (React is bundled, so it works offline) |
-| `www/manifest.json`, `www/sw.js` | Makes it installable and lets it work offline |
-| `www/assets/` | Logo and app icons |
-| `capacitor.config.json`, `package.json` | Capacitor wrapper that turns the web app into an Android APK |
-| `resources/` | Source icon and splash image for the APK |
-| `.github/workflows/pages.yml` | Publishes `www/` to GitHub Pages |
-| `.github/workflows/android.yml` | Builds the APK and attaches it to the `latest` release |
+1. **Business → Switch or edit company → Edit details**: enter your company name, address, phone and quote-number prefix.
+2. **Upload logo**: pick your logo from the phone's gallery or files. It's resized automatically and appears on every PDF.
+3. **Business → Users → + Add user**: add each staff member (name, role, phone, email) and tap one to make them active.
+   The active user is printed as "Prepared by" on new quotes and invoices.
+4. Tap **+** to make your first quote.
 
 ## Features
 
-- Quotes and invoices, saved on the device
-- Several companies/letterheads, each with its own number prefix
-- Price list: tap a container rate to add a line item
+- Quotes and invoices, saved on the device (convert an accepted quote into an invoice)
+- Several companies/letterheads, each with its own logo, address and number prefix
+- Staff users with "Prepared by" on documents
+- Container-rate price list: tap a rate to add a line item
 - Discounts and totals (no GST)
-- Share by WhatsApp or email; **Save PDF** opens the print dialog → "Save as PDF" (A4)
+- **Save PDF** prints a full-page **A4** document (choose "Save as PDF" in the print dialog)
+- Share by WhatsApp or email
 - Business → Backup to file exports a JSON backup
+
+## Repo layout
+
+| Path | What it is |
+|---|---|
+| `www/` | The app: `index.html` (self-contained, works offline), manifest, service worker, icons |
+| `capacitor.config.json`, `package.json` | Capacitor wrapper that turns the web app into an Android APK |
+| `resources/` | Source icon and splash for the APK |
+| `android-signing/debug.keystore` | Fixed signing key so each new APK installs as an update |
+| `.github/workflows/` | Publishes the web app to GitHub Pages and builds the APK on every push |
+
+Run locally: `npx serve www`, then open http://localhost:3000

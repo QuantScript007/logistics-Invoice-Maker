@@ -1,7 +1,7 @@
 {
-  "name": "MOFA Quotation Maker",
-  "short_name": "MOFA Quotes",
-  "description": "Quotations and invoices for MOFA Company Pvt Ltd",
+  "name": "Logistic Invoice Maker",
+  "short_name": "Invoice Maker",
+  "description": "Quotations and invoices for logistics companies",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

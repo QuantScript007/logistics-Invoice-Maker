@@ -29,6 +29,7 @@ jobs:
           set -eo pipefail
           exec > >(tee build.log) 2>&1
           echo "ANDROID_HOME=$ANDROID_HOME"
+          mkdir -p ~/.android && cp android-signing/debug.keystore ~/.android/debug.keystore
           npm install --no-audit --no-fund
           npx cap add android
           npx capacitor-assets generate --android --assetPath resources \
@@ -37,7 +38,7 @@ jobs:
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon --stacktrace
-          cp app/build/outputs/apk/debug/app-debug.apk ../MOFA-Quotes.apk
+          cp app/build/outputs/apk/debug/app-debug.apk ../Logistic-Invoice-Maker.apk
 
       - name: Show error in run summary
         if: failure()
@@ -48,17 +49,17 @@ jobs:
       - name: Upload APK (workflow artifact)
         uses: actions/upload-artifact@v4
         with:
-          name: MOFA-Quotes-apk
-          path: MOFA-Quotes.apk
+          name: Logistic-Invoice-Maker-apk
+          path: Logistic-Invoice-Maker.apk
 
       - name: Publish APK to the "latest" release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: MOFA Quotes — latest build
+          name: Logistic Invoice Maker — latest build
           body: |
-            Download **MOFA-Quotes.apk** below and open it on your Android phone to install.
+            Download **Logistic-Invoice-Maker.apk** below and open it on your Android phone to install.
             (Allow "Install unknown apps" for your browser / file manager when asked.)
             Built from commit ${{ github.sha }}.
           make_latest: true
-          files: MOFA-Quotes.apk
+          files: Logistic-Invoice-Maker.apk
