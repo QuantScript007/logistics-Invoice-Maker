@@ -40,6 +40,6 @@ npx serve www        # then open http://localhost:3000
 - Quotes and invoices, saved on the device
 - Several companies/letterheads, each with its own number prefix
 - Price list: tap a container rate to add a line item
-- GST calculation, discounts, totals
+- Discounts and totals (no GST)
 - Share by WhatsApp or email; **Save PDF** opens the print dialog → "Save as PDF" (A4)
 - Business → Backup to file exports a JSON backup
