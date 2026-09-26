@@ -35,6 +35,7 @@ jobs:
           npx capacitor-assets generate --android --assetPath resources \
             --iconBackgroundColor '#F4F1EB' --splashBackgroundColor '#F4F1EB' || echo "icon generation skipped"
           npx cap sync android
+          cp android-src/*.java android/app/src/main/java/mv/logistics/invoicemaker/
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon --stacktrace
