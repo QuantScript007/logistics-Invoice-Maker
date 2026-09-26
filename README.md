@@ -26,7 +26,6 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 - Container-rate price list: tap a rate to add a line item
 - Discounts and totals (no GST)
 - **Save PDF** prints a full-page **A4** document (choose "Save as PDF" in the print dialog)
-- Share by WhatsApp or email
 - Business → Backup to file exports a JSON backup
 
 ## Repo layout
