@@ -27,7 +27,7 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 - **Ledger**: full history of quotes, invoices and payments for each user, with invoiced / received / outstanding totals, running balance and CSV export
 - Backup and restore (move your history to a new phone)
 - Delete buttons (with confirmation) on quotes, invoices, clients, ledger entries, users, companies, plus "Delete all data"
-- Container-rate price list: tap a rate to add a line item
+- **Item list**: save unlimited items (name, category, unit, rate), search, edit, delete; tap to add to a quote, or ☆ Save any typed line
 - Discounts and totals (no GST)
 - **Save PDF** prints a full-page **A4** document (choose "Save as PDF" in the print dialog)
 - Business → Backup to file exports a JSON backup
