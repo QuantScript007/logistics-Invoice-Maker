@@ -1,0 +1,6 @@
+{
+  "appId": "mv.mofa.quotes",
+  "appName": "MOFA Quotes",
+  "webDir": "www",
+  "android": { "backgroundColor": "#F4F1EB" }
+}
