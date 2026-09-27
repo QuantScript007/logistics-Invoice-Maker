@@ -13,7 +13,7 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 ## First-time setup
 
 1. **Business → Switch or edit company → Edit details**: enter your company name, address, phone and quote-number prefix.
-2. **Upload logo**: pick your logo from the phone's gallery or files. It's resized automatically and appears on every PDF.
+2. Optional per quote: a valid-until / due date and payment terms — leave empty and nothing is printed.
 3. **Business → Users → + Add user**: add each staff member (name, role, phone, email) and their **bank details**
    (bank, account name, account number, currency, SWIFT/IBAN). Tap a user to make them active.
    The active user is printed as "Prepared by", and their bank details are added to their invoices automatically.
@@ -22,7 +22,7 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 ## Features
 
 - Quotes and invoices, saved on the device; **Edit** any saved quote or invoice (number kept, change logged); convert an accepted quote into an invoice
-- Several companies/letterheads, each with your own uploaded logo, address and number prefix
+- Several companies/letterheads, each with its own address and number prefix (no logo)
 - Staff users with "Prepared by" and their own bank details on invoices
 - **Ledger**: full history of quotes, invoices and payments for each user, with invoiced / received / outstanding totals, running balance and CSV export
 - Backup and restore (move your history to a new phone)
