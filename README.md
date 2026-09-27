@@ -16,14 +16,14 @@ If Android asks, allow "Install unknown apps" once. Later builds install over th
 2. Optional per quote: a valid-until / due date and payment terms — leave empty and nothing is printed.
 3. **Business → Users → + Add user**: add each staff member (name, role, phone, email) and their **bank details**
    (bank, account name, account number, currency, SWIFT/IBAN). Tap a user to make them active.
-   The active user is printed as "Prepared by", and their bank details are added to their invoices automatically.
+   Their bank details are added to their invoices automatically.
 4. Tap **+** to make your first quote.
 
 ## Features
 
 - Quotes and invoices, saved on the device; **Edit** any saved quote or invoice (number kept, change logged); convert an accepted quote into an invoice
 - Several companies/letterheads, each with its own address and number prefix (no logo)
-- Staff users with "Prepared by" and their own bank details on invoices
+- Staff users with their own bank details on invoices
 - **Ledger**: full history of quotes, invoices and payments for each user, with invoiced / received / outstanding totals, running balance and CSV export
 - Backup and restore (move your history to a new phone)
 - Delete buttons (with confirmation) on quotes, invoices, clients, ledger entries, users, companies, plus "Delete all data"
